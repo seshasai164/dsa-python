@@ -1,15 +1,12 @@
-n=1234
-num=n
-result=0
-while num>0:
-    ld=num%10
-    result=(result*10)+ld
-    num=num//10
-
-
-if n==result:   
-    print("the result is palindrome")
-else :
-    print("the result is not palindrome")
-
-    
+class Solution:
+    def isPalindrome(self, x):
+        if x < 0:
+            return False
+        
+        num = x
+        result = 0
+        while num > 0:
+            result = result * 10 + num % 10
+            num //= 10
+        
+        return x == result
