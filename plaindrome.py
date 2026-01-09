@@ -11,4 +11,5 @@ if n==result:
     print("the result is palindrome")
 else :
     print("the result is not palindrome")
+
     
